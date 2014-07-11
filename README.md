@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .blur4 { filter: blur(.5rem); }
 .blur5 { filter: blur(1rem); }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .blur1-ns { filter: blur(1px); }
   .blur2-ns { filter: blur(.125rem); }
   .blur3-ns { filter: blur(.25rem); }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .blur5-ns { filter: blur(1rem); }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .blur1-m { filter: blur(1px); }
   .blur2-m { filter: blur(.125rem); }
   .blur3-m { filter: blur(.25rem); }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .blur5-m { filter: blur(1rem); }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .blur1-l { filter: blur(1px); }
   .blur2-l { filter: blur(.125rem); }
   .blur3-l { filter: blur(.25rem); }
