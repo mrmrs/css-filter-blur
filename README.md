@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-filter-blur)
 ## File Size
 
 872B filter-blur.css
-701B filter-blur.min.css
+701B filter-blur.min.css 
+189B minified and gzipped
 
 ## The Code
 ```
