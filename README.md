@@ -102,5 +102,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 
 ## License
 
-MIT
-
+ISC
