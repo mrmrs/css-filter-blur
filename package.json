@@ -1,7 +1,7 @@
 {
   "name": "css-filter-blur",
   "style": "filter-blur.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-filter-blur",
   "description": "Css module of single purpose classes for filter blur",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-filter-blur.css > css/css-filter-blur.css && tachyons src/css-filter-blur.css --minify > css/css-filter-blur.min.css && tachyons src/css-filter-blur.css --generate-docs --package=../../package.json > readme.md"
