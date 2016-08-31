@@ -1,7 +1,7 @@
 {
   "name": "css-filter-blur",
   "style": "filter-blur.css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "http://github.com/mrmrs/css-filter-blur",
   "description": "Css module of single purpose classes for filter blur",
   "keywords": [
