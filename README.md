@@ -1,10 +1,10 @@
-# css-filter-blur 0.0.7
+# css-filter-blur 1.0.6
 
 Css module of single purpose classes for filter blur
 
 #### Stats
 
-213 | 20 | 20
+246 | 20 | 40
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-filter-blur
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-filter-blur
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-filter-blur.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-filter-blur";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-filter-blur@1.0.6/css/css-filter-blur.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,40 +68,40 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FILTER BLUR
 */
-.blur1 { filter: blur( 1px ); }
-.blur2 { filter: blur( .125rem ); }
-.blur3 { filter: blur( .25rem ); }
-.blur4 { filter: blur( .5rem ); }
-.blur5 { filter: blur( 1rem ); }
+.blur1 { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
+.blur2 { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
+.blur3 { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
+.blur4 { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
+.blur5 { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
 @media screen and (min-width: 48em) {
- .blur1-ns { filter: blur( 1px ); }
- .blur2-ns { filter: blur( .125rem ); }
- .blur3-ns { filter: blur( .25rem ); }
- .blur4-ns { filter: blur( .5rem ); }
- .blur5-ns { filter: blur( 1rem ); }
+ .blur1-ns { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
+ .blur2-ns { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
+ .blur3-ns { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
+ .blur4-ns { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
+ .blur5-ns { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .blur1-m { filter: blur( 1px ); }
- .blur2-m { filter: blur( .125rem ); }
- .blur3-m { filter: blur( .25rem ); }
- .blur4-m { filter: blur( .5rem ); }
- .blur5-m { filter: blur( 1rem ); }
+ .blur1-m { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
+ .blur2-m { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
+ .blur3-m { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
+ .blur4-m { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
+ .blur5-m { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
 }
 @media screen and (min-width: 64em) {
- .blur1-l { filter: blur( 1px ); }
- .blur2-l { filter: blur( .125rem ); }
- .blur3-l { filter: blur( .25rem ); }
- .blur4-l { filter: blur( .5rem ); }
- .blur5-l { filter: blur( 1rem ); }
+ .blur1-l { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
+ .blur2-l { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
+ .blur3-l { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
+ .blur4-l { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
+ .blur5-l { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
 }
 ```
 
@@ -103,3 +121,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
