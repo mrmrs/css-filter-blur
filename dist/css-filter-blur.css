@@ -1,30 +1,85 @@
-/*
-   FILTER BLUR
-*/
-.blur1 { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
-.blur2 { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
-.blur3 { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
-.blur4 { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
-.blur5 { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-@media screen and (min-width: 48em) {
- .blur1-ns { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-ns { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-ns { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-ns { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-ns { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .blur1-m { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-m { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-m { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-m { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-m { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-}
-@media screen and (min-width: 64em) {
- .blur1-l { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-l { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-l { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-l { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-l { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
+.blur1 {
+  filter: blur(1px);
 }
 
+.blur2 {
+  filter: blur(.125rem);
+}
+
+.blur3 {
+  filter: blur(.25rem);
+}
+
+.blur4 {
+  filter: blur(.5rem);
+}
+
+.blur5 {
+  filter: blur(1rem);
+}
+
+@media screen and (width >= 48em) {
+  .blur1-s {
+    filter: blur(1px);
+  }
+
+  .blur2-s {
+    filter: blur(.125rem);
+  }
+
+  .blur3-s {
+    filter: blur(.25rem);
+  }
+
+  .blur4-s {
+    filter: blur(.5rem);
+  }
+
+  .blur5-s {
+    filter: blur(1rem);
+  }
+}
+
+@media screen and (width >= 48em) and (width <= 64em) {
+  .blur1-m {
+    filter: blur(1px);
+  }
+
+  .blur2-m {
+    filter: blur(.125rem);
+  }
+
+  .blur3-m {
+    filter: blur(.25rem);
+  }
+
+  .blur4-m {
+    filter: blur(.5rem);
+  }
+
+  .blur5-m {
+    filter: blur(1rem);
+  }
+}
+
+@media screen and (width >= 64em) {
+  .blur1-l {
+    filter: blur(1px);
+  }
+
+  .blur2-l {
+    filter: blur(.125rem);
+  }
+
+  .blur3-l {
+    filter: blur(.25rem);
+  }
+
+  .blur4-l {
+    filter: blur(.5rem);
+  }
+
+  .blur5-l {
+    filter: blur(1rem);
+  }
+}
