@@ -8,7 +8,7 @@
 .blur4 { filter: blur(.5rem); }
 .blur5 { filter: blur(1rem); }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .blur1-s { filter: blur(1px); }
   .blur2-s { filter: blur(.125rem); }
   .blur3-s { filter: blur(.25rem); }
@@ -16,7 +16,7 @@
   .blur5-s { filter: blur(1rem); }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .blur1-m { filter: blur(1px); }
   .blur2-m { filter: blur(.125rem); }
   .blur3-m { filter: blur(.25rem); }
@@ -24,7 +24,7 @@
   .blur5-m { filter: blur(1rem); }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .blur1-l { filter: blur(1px); }
   .blur2-l { filter: blur(.125rem); }
   .blur3-l { filter: blur(.25rem); }
