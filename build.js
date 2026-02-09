@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-filter-blur.css');
+const srcFile = path.join(__dirname, 'src', 'filter-blur.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-filter-blur.css',
+  filename: 'filter-blur.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-filter-blur.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'filter-blur.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-filter-blur.css',
+  filename: 'filter-blur.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-filter-blur.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'filter-blur.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-filter-blur.css     ${unminified.length} bytes`);
-console.log(`  dist/css-filter-blur.min.css ${minified.length} bytes`);
+console.log(`  dist/filter-blur.css     ${unminified.length} bytes`);
+console.log(`  dist/filter-blur.min.css ${minified.length} bytes`);
