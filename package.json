@@ -1,38 +1,44 @@
 {
   "name": "css-filter-blur",
-  "style": "filter-blur.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-filter-blur",
-  "description": "Css module of single purpose classes for filter blur",
+  "version": "2.0.0",
+  "description": "Functional CSS for filter-blur",
+  "style": "dist/filter-blur.css",
+  "main": "dist/filter-blur.css",
+  "exports": {
+    ".": "./dist/filter-blur.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "filter-blur"
+    "filter-blur",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-filter-blur": {
+  "homepage": "https://github.com/mrmrs/css-filter-blur",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-filter-blur.git"
+    "url": "https://github.com/mrmrs/css-filter-blur.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-filter-blur/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-filter-blur/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
