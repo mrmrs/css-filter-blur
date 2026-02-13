@@ -2,33 +2,129 @@
    FILTER BLUR
 */
 
+.blur0 { filter: blur(0); }
 .blur1 { filter: blur(1px); }
-.blur2 { filter: blur(.125rem); }
-.blur3 { filter: blur(.25rem); }
-.blur4 { filter: blur(.5rem); }
-.blur5 { filter: blur(1rem); }
+.blur2 { filter: blur(4px); }
+.blur3 { filter: blur(8px); }
+.blur4 { filter: blur(16px); }
+.blur5 { filter: blur(32px); }
+.blur6 { filter: blur(64px); }
+.blur7 { filter: blur(96px); }
+.blur8 { filter: blur(128px); }
+
+.blur0-hover:hover { filter: blur(0); }
+.blur1-hover:hover { filter: blur(1px); }
+.blur2-hover:hover { filter: blur(4px); }
+.blur3-hover:hover { filter: blur(8px); }
+.blur4-hover:hover { filter: blur(16px); }
+.blur5-hover:hover { filter: blur(32px); }
+.blur6-hover:hover { filter: blur(64px); }
+.blur7-hover:hover { filter: blur(96px); }
+.blur8-hover:hover { filter: blur(128px); }
+
+.blur0-focus:focus { filter: blur(0); }
+.blur1-focus:focus { filter: blur(1px); }
+.blur2-focus:focus { filter: blur(4px); }
+.blur3-focus:focus { filter: blur(8px); }
+.blur4-focus:focus { filter: blur(16px); }
+.blur5-focus:focus { filter: blur(32px); }
+.blur6-focus:focus { filter: blur(64px); }
+.blur7-focus:focus { filter: blur(96px); }
+.blur8-focus:focus { filter: blur(128px); }
 
 @media screen and (min-width: 32em) {
+  .blur0-s { filter: blur(0); }
   .blur1-s { filter: blur(1px); }
-  .blur2-s { filter: blur(.125rem); }
-  .blur3-s { filter: blur(.25rem); }
-  .blur4-s { filter: blur(.5rem); }
-  .blur5-s { filter: blur(1rem); }
+  .blur2-s { filter: blur(4px); }
+  .blur3-s { filter: blur(8px); }
+  .blur4-s { filter: blur(16px); }
+  .blur5-s { filter: blur(32px); }
+  .blur6-s { filter: blur(64px); }
+  .blur7-s { filter: blur(96px); }
+  .blur8-s { filter: blur(128px); }
+
+  .blur0-hover-s:hover { filter: blur(0); }
+  .blur1-hover-s:hover { filter: blur(1px); }
+  .blur2-hover-s:hover { filter: blur(4px); }
+  .blur3-hover-s:hover { filter: blur(8px); }
+  .blur4-hover-s:hover { filter: blur(16px); }
+  .blur5-hover-s:hover { filter: blur(32px); }
+  .blur6-hover-s:hover { filter: blur(64px); }
+  .blur7-hover-s:hover { filter: blur(96px); }
+  .blur8-hover-s:hover { filter: blur(128px); }
+
+  .blur0-focus-s:focus { filter: blur(0); }
+  .blur1-focus-s:focus { filter: blur(1px); }
+  .blur2-focus-s:focus { filter: blur(4px); }
+  .blur3-focus-s:focus { filter: blur(8px); }
+  .blur4-focus-s:focus { filter: blur(16px); }
+  .blur5-focus-s:focus { filter: blur(32px); }
+  .blur6-focus-s:focus { filter: blur(64px); }
+  .blur7-focus-s:focus { filter: blur(96px); }
+  .blur8-focus-s:focus { filter: blur(128px); }
 }
 
 @media screen and (min-width:48em) {
+  .blur0-m { filter: blur(0); }
   .blur1-m { filter: blur(1px); }
-  .blur2-m { filter: blur(.125rem); }
-  .blur3-m { filter: blur(.25rem); }
-  .blur4-m { filter: blur(.5rem); }
-  .blur5-m { filter: blur(1rem); }
+  .blur2-m { filter: blur(4px); }
+  .blur3-m { filter: blur(8px); }
+  .blur4-m { filter: blur(16px); }
+  .blur5-m { filter: blur(32px); }
+  .blur6-m { filter: blur(64px); }
+  .blur7-m { filter: blur(96px); }
+  .blur8-m { filter: blur(128px); }
+
+  .blur0-hover-m:hover { filter: blur(0); }
+  .blur1-hover-m:hover { filter: blur(1px); }
+  .blur2-hover-m:hover { filter: blur(4px); }
+  .blur3-hover-m:hover { filter: blur(8px); }
+  .blur4-hover-m:hover { filter: blur(16px); }
+  .blur5-hover-m:hover { filter: blur(32px); }
+  .blur6-hover-m:hover { filter: blur(64px); }
+  .blur7-hover-m:hover { filter: blur(96px); }
+  .blur8-hover-m:hover { filter: blur(128px); }
+
+  .blur0-focus-m:focus { filter: blur(0); }
+  .blur1-focus-m:focus { filter: blur(1px); }
+  .blur2-focus-m:focus { filter: blur(4px); }
+  .blur3-focus-m:focus { filter: blur(8px); }
+  .blur4-focus-m:focus { filter: blur(16px); }
+  .blur5-focus-m:focus { filter: blur(32px); }
+  .blur6-focus-m:focus { filter: blur(64px); }
+  .blur7-focus-m:focus { filter: blur(96px); }
+  .blur8-focus-m:focus { filter: blur(128px); }
 }
 
 @media screen and (min-width: 96em) {
+  .blur0-l { filter: blur(0); }
   .blur1-l { filter: blur(1px); }
-  .blur2-l { filter: blur(.125rem); }
-  .blur3-l { filter: blur(.25rem); }
-  .blur4-l { filter: blur(.5rem); }
-  .blur5-l { filter: blur(1rem); }
+  .blur2-l { filter: blur(4px); }
+  .blur3-l { filter: blur(8px); }
+  .blur4-l { filter: blur(16px); }
+  .blur5-l { filter: blur(32px); }
+  .blur6-l { filter: blur(64px); }
+  .blur7-l { filter: blur(96px); }
+  .blur8-l { filter: blur(128px); }
+
+  .blur0-hover-l:hover { filter: blur(0); }
+  .blur1-hover-l:hover { filter: blur(1px); }
+  .blur2-hover-l:hover { filter: blur(4px); }
+  .blur3-hover-l:hover { filter: blur(8px); }
+  .blur4-hover-l:hover { filter: blur(16px); }
+  .blur5-hover-l:hover { filter: blur(32px); }
+  .blur6-hover-l:hover { filter: blur(64px); }
+  .blur7-hover-l:hover { filter: blur(96px); }
+  .blur8-hover-l:hover { filter: blur(128px); }
+
+  .blur0-focus-l:focus { filter: blur(0); }
+  .blur1-focus-l:focus { filter: blur(1px); }
+  .blur2-focus-l:focus { filter: blur(4px); }
+  .blur3-focus-l:focus { filter: blur(8px); }
+  .blur4-focus-l:focus { filter: blur(16px); }
+  .blur5-focus-l:focus { filter: blur(32px); }
+  .blur6-focus-l:focus { filter: blur(64px); }
+  .blur7-focus-l:focus { filter: blur(96px); }
+  .blur8-focus-l:focus { filter: blur(128px); }
 }
 
