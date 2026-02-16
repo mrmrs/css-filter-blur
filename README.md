@@ -1,124 +1,104 @@
-# css-filter-blur 1.0.6
+# css-filter-blur
 
-Css module of single purpose classes for filter blur
+Functional CSS for filter-blur
 
-#### Stats
+## Filesize
 
-246 | 20 | 40
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/filter-blur.css` | 5225 bytes |
+| `dist/filter-blur.min.css` | 3753 bytes (473 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-filter-blur
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-filter-blur
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-filter-blur.git
+```sh
+npm install css-filter-blur
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-filter-blur";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-filter-blur@1.0.6/css/css-filter-blur.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-filter-blur">
+<link rel="stylesheet" href="https://unpkg.com/css-filter-blur/dist/filter-blur.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   FILTER BLUR
-*/
-.blur1 { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
-.blur2 { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
-.blur3 { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
-.blur4 { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
-.blur5 { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-@media screen and (min-width: 48em) {
- .blur1-ns { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-ns { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-ns { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-ns { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-ns { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .blur1-m { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-m { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-m { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-m { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-m { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-}
-@media screen and (min-width: 64em) {
- .blur1-l { -webkit-filter: blur( 1px ); filter: blur( 1px ); }
- .blur2-l { -webkit-filter: blur( .125rem ); filter: blur( .125rem ); }
- .blur3-l { -webkit-filter: blur( .25rem ); filter: blur( .25rem ); }
- .blur4-l { -webkit-filter: blur( .5rem ); filter: blur( .5rem ); }
- .blur5-l { -webkit-filter: blur( 1rem ); filter: blur( 1rem ); }
-}
+```html
+<link rel="stylesheet" href="path/to/css-filter-blur/dist/filter-blur.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.blur0` | `filter: blur();` |
+| `.blur1` | `filter: blur(1px);` |
+| `.blur2` | `filter: blur(4px);` |
+| `.blur3` | `filter: blur(8px);` |
+| `.blur4` | `filter: blur(16px);` |
+| `.blur5` | `filter: blur(32px);` |
+| `.blur6` | `filter: blur(64px);` |
+| `.blur7` | `filter: blur(96px);` |
+| `.blur8` | `filter: blur(128px);` |
+| `.blur0-s` | `filter: blur();` |
+| `.blur1-s` | `filter: blur(1px);` |
+| `.blur2-s` | `filter: blur(4px);` |
+| `.blur3-s` | `filter: blur(8px);` |
+| `.blur4-s` | `filter: blur(16px);` |
+| `.blur5-s` | `filter: blur(32px);` |
+| `.blur6-s` | `filter: blur(64px);` |
+| `.blur7-s` | `filter: blur(96px);` |
+| `.blur8-s` | `filter: blur(128px);` |
+| `.blur0-m` | `filter: blur();` |
+| `.blur1-m` | `filter: blur(1px);` |
+| `.blur2-m` | `filter: blur(4px);` |
+| `.blur3-m` | `filter: blur(8px);` |
+| `.blur4-m` | `filter: blur(16px);` |
+| `.blur5-m` | `filter: blur(32px);` |
+| `.blur6-m` | `filter: blur(64px);` |
+| `.blur7-m` | `filter: blur(96px);` |
+| `.blur8-m` | `filter: blur(128px);` |
+| `.blur0-l` | `filter: blur();` |
+| `.blur1-l` | `filter: blur(1px);` |
+| `.blur2-l` | `filter: blur(4px);` |
+| `.blur3-l` | `filter: blur(8px);` |
+| `.blur4-l` | `filter: blur(16px);` |
+| `.blur5-l` | `filter: blur(32px);` |
+| `.blur6-l` | `filter: blur(64px);` |
+| `.blur7-l` | `filter: blur(96px);` |
+| `.blur8-l` | `filter: blur(128px);` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.blur0-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/filter-blur.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/filter-blur.css` — formatted
+- `dist/filter-blur.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
